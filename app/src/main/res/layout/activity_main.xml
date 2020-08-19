@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/neomorph_background_color"
+    tools:context=".MainActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/login" />
+
+    <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:neomorph_background_color="@color/neomorph_background_color"
+        app:neomorph_corner_radius="16dp"
+        app:neomorph_highlight_color="@color/neomorph_highlight_color"
+        app:neomorph_shadow_color="@color/neomorph_shadow_color"
+        app:neomorph_shadow_type="outer"
+        android:elevation="8dp"
+        app:neomorph_shadow_visible="true"
+        app:neomorph_view_type="rectangular">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            android:hint="Email"
+            android:padding="20dp" />
+    </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>    <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:neomorph_background_color="@color/neomorph_background_color"
+        app:neomorph_corner_radius="16dp"
+        app:neomorph_elevation="8dp"
+        app:neomorph_highlight_color="@color/neomorph_highlight_color"
+        app:neomorph_shadow_color="@color/neomorph_shadow_color"
+        app:neomorph_shadow_type="outer"
+        app:neomorph_shadow_visible="true"
+        app:neomorph_view_type="rectangular">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/text_input_password_toggle"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:drawableEnd="@drawable/ic_remove_red_eye_black_24dp"
+            android:padding="20dp" />
+    </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginRight="20dp"
+        android:text="Forget?"
+        android:textColor="#4a26fd"
+        android:textStyle="bold" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Login"
+        android:textColor="@android:color/white"
+        android:background="@drawable/custom_round"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="50dp"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:text="Or connect using" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:background="@drawable/google"
+            android:contentDescription="Google" />
+
+        <Button
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/linkedin"
+            android:contentDescription="Linked-in" />
+
+        <Button
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/fb"
+            android:contentDescription="Facebook" />
+
+        <Button
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/github"
+            android:contentDescription="Github" />
+    </LinearLayout>
+</LinearLayout>
